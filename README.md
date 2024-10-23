@@ -1,3 +1,9 @@
+# Hosted in 
+Kanban board - https://saptharishee.github.io/my-app/
+
+Api :  https://api.quicksell.co/v1/internal/frontend-assignment
+
+Question : https://quicksell.notion.site/Frontend-Assignment-5288a76c8adc4214be36e488d086adc6
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
