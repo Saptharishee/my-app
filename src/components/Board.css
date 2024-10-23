@@ -1,0 +1,177 @@
+.kanban-board {
+    display: flex; /* Flexbox for columns */
+    padding: 20px; /* Add padding around the board */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+.kanban-column {
+    background: #f8f8f8; /* Light background for columns */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Space between columns */
+    padding: 15px; /* Padding inside each column */
+    min-width: 250px; /* Minimum width for each column */
+    max-width: 300px; /* Maximum width for each column */
+    flex: 0 0 auto; /* Prevent columns from growing too large */
+    /* Adjust these values as needed for your layout */
+}
+
+.kanban-column-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between title and controls */
+    margin-bottom: 10px; /* Space below the header */
+    font-weight: bold; /* Bold header text */
+}
+
+.priority-icon {
+    width: 20px; /* Ensure consistent icon size */
+    height: 20px; /* Ensure consistent icon size */
+    margin-right: 8px; /* Space between icon and title */
+}
+
+.column-controls {
+    display: flex; /* Flexbox for control icons */
+    gap: 10px; /* Space between control icons */
+}
+
+.add-task-icon, .more-options-icon {
+    width: 24px; /* Icon size */
+    height: 24px; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor on hover */
+    transition: transform 0.2s ease; /* Transition for hover effect */
+}
+
+.add-task-icon:hover, .more-options-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+.kanban-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition for smooth hover effect */
+}
+
+.kanban-card:hover {
+    transform: translateY(-5px); /* Rise effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between; /* Space between user info and status/title */
+    align-items: center;
+    margin-bottom: 10px; /* Space below the header */
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    width: 20px; /* Slightly larger for better visibility */
+    height: 20px; /* Maintain aspect ratio */
+    margin-left: 5px; /* Space between user name and icon */
+}
+
+.status-title {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    margin-top: 0; /* No top margin needed for proper alignment */
+}
+
+.status-icon {
+    width: 20px; /* Ensure consistent icon size */
+    height: 20px; /* Ensure consistent icon size */
+    margin-right: 8px; /* Space between the status icon and the title */
+}
+
+.kanban-card-title {
+    font-weight: bold; /* This will also work if you use the strong tag */
+    font-size: 1rem; /* Adjust the size as needed */
+    /* Add other styles as necessary */
+}
+
+
+.tags {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    margin-top: 5px; /* Space above tags */
+}
+
+.priority-icon {
+    width: 20px; /* Ensure consistent icon size */
+    height: 20px; /* Ensure consistent icon size */
+    margin-right: 5px; /* Space between priority icon and tags */
+}
+
+.tag {
+    display: inline-block;
+    background: #e0e0e0;
+    border-radius: 3px;
+    padding: 3px 8px; /* Increased padding for better touch area */
+    margin-left: 5px; /* Space between tags */
+    font-size: 0.85rem; /* Slightly smaller font for tags */
+}
+.kanban-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 15px; /* Increased margin for better spacing */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition for smooth hover effect */
+}
+
+.kanban-card:hover {
+    transform: translateY(-5px); /* Rise effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow on hover */
+}
+
+/* User ID and Profile Icon */
+.user-info {
+    display: flex;
+    align-items: center; /* Center vertically */
+    margin-bottom: 10px; /* Space below user info */
+}
+
+.user-id {
+    margin-right: 5px; /* Space between user ID and profile icon */
+}
+
+/* Status Icon and Title */
+.status-title {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space below status/title */
+}
+
+.status-icon {
+    width: 20px; /* Ensure consistent icon size */
+    height: 20px; /* Ensure consistent icon size */
+    margin-right: 8px; /* Space between the status icon and the title */
+}
+
+/* Tags Section */
+.tags {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.priority-icon {
+    width: 20px; /* Ensure consistent icon size */
+    height: 20px; /* Ensure consistent icon size */
+    margin-right: 5px; /* Space between priority icon and tags */
+}
+
+.tag {
+    display: inline-block;
+    background: #e0e0e0;
+    border-radius: 3px;
+    padding: 3px 8px; /* Increased padding for better touch area */
+    margin-left: 5px; /* Space between tags */
+    font-size: 0.85rem; /* Slightly smaller font for tags */
+}
